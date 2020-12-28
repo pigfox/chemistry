@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type Atom struct {
 	Name   string `json:name`
@@ -55,8 +57,8 @@ func bond(a1 Atom, a2 Atom) bool {
 
 func stable(molecule Molecule) bool {
 	charge := 0
-	for c := range molecule.Atoms {
-		charge += c
+	for _, atom := range molecule.Atoms {
+		charge += atom.Atom.Charge
 	}
 
 	fmt.Println("Charge:", charge)
