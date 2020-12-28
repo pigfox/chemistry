@@ -23,7 +23,7 @@ func main() {
 	hydrogenAtom := Atom{Name: "Hydrogen", Charge: 1}
 	clorineAtom := Atom{Name: "Chlorine", Charge: -1}
 	oxygenAtom := Atom{Name: "Oxygen", Charge: -2}
-	phosphorus := Atom{Name: "Phosphorus", Charge: -3}
+	phosphorus := Atom{Name: "Phosphorus", Charge: 1}
 
 	hydrogenAtoms := Atoms{Atom: hydrogenAtom, Number: 3}
 	phosphorusAtoms := Atoms{Atom: phosphorus, Number: 1}
