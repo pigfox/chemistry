@@ -61,8 +61,6 @@ func stable(molecule Molecule) bool {
 		charge += atom.Atom.Charge
 	}
 
-	fmt.Println("Charge:", charge)
-
 	if charge == 0 {
 		return true
 	}
